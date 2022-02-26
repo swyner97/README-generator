@@ -1,8 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 // const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown')
-const writeFile = require('./utils/generateMarkdown')
+const fs = require("fs");
+const generateMarkdown = require('./utils/generateMarkdown');
+const path = require('path');
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -25,7 +27,7 @@ const questions = [
             message: 'Project title?',
             validate: projectTitle => {
                 if (projectTitle) {
-                    return true;
+                    return true; 
                 } else {
                     console.log('Please input your project title!');
                     return false;
@@ -50,12 +52,12 @@ const questions = [
             type: 'input',
             name: 'contents',
             message: 'Provide a Table of Contents.',
-            default: "Usage, License, Author"
+            default: "Description, Usage, License, Contribution, Author"
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'Installations instructions:',
+            message: 'Installation instructions:',
             default: 'npm install'
         },
         {
@@ -65,7 +67,7 @@ const questions = [
         },
         {
             type: 'input',
-            name: 'contributing',
+            name: 'contribution',
             message: 'Contribution guidelines:'
         },
         {
@@ -78,16 +80,22 @@ const questions = [
             type: 'checkbox',
             name: 'license',
             message: 'License',
-            choices: ["MIT", "Apache", "ISC", "GNU", "None"]
+            choices: ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "Mozilla Public License 2.0", "IBM", "GPL", "None"]
         }
 
     ]
 
-function init() {
-    inquirer.prompt(questions).then(answers => {
-        console.log(answers)
-        writeFile('./readme.md', generateMarkdown(answers))
-    })
-}
+    function generateReadme(fileName, data) {
+        return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    }
 
-init();
+    function init() {
+        inquirer.prompt(questions).then(data => {
+            console.log ("README file created")
+            generateReadme("./dist/README.md", generateMarkdown(data))    
+        })   
+       
+       }
+       
+       init();
+
