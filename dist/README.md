@@ -1,8 +1,5 @@
- ReadMe Generator  👋</h1>
+ README Generator  👋</h1>
 
-## Description
-
-🔍 an app that easily generates a readme file.
 ## Table of Contents
 
 - [Description](#description)
@@ -11,14 +8,19 @@
 - [License](#license)
 - [Credits](#contributing)
 - [Tests](#tests)
-- [Questions](#questions)
+- [Contact Me](#Contact)
+
+## Description
+
+🔍 An application that creates a professional readme file with ease. 
+
 ## Installation
 
 💾 npm install
 
 ## Usage
 
-💻 use for ease
+💻 Use of ease.
 
 ## License
 
@@ -31,7 +33,7 @@ This application is covered by the  license.
 
 ## Credits
 
-👪 n/a
+👪 
 
 ## Tests
 
@@ -39,6 +41,6 @@ This application is covered by the  license.
 
 ## Contact Me
 
-✋ Find me on GitHub: [(https://github.com/swyner97)
+✋ Find me on GitHub: https://github.com/swyner97
 
 ✉️ Email me with any questions: swyner97@gmail.com
