@@ -12,7 +12,7 @@
 
 ## Description
 
-🔍 An application that creates a professional readme file with ease. 
+🔍 An Application that creates a readme file with ease of prompts. 
 
 ## Installation
 
@@ -20,7 +20,7 @@
 
 ## Usage
 
-💻 Use of ease.
+💻 Use of ease. 
 
 ## License
 
@@ -33,7 +33,7 @@ This application is covered by the  license.
 
 ## Credits
 
-👪 
+👪 none. 
 
 ## Tests
 
