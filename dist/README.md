@@ -1,4 +1,4 @@
- README Generator  👋</h1>
+ ## README Generator  👋
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ This application is covered by the  license.
 
 ## Credits
 
-👪 Made with <3, Sarah 
+👪 Made with <3, Sarah. 
 
 ## Tests
 
