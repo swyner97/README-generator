@@ -34,6 +34,7 @@
     "lodash": "^4.17.21",
     "log-symbols": "^4.1.0",
     "mimic-fn": "^2.1.0",
+    "module-exports": "^1.0.0",
     "mute-stream": "^0.0.8",
     "onetime": "^5.1.2",
     "ora": "^5.4.1",

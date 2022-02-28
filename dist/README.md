@@ -1,28 +1,44 @@
-# s ![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
-## Table of contents
-* [Description](#description)
-* [Installations](#Installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contribution](#contribution)
-* [Contact](#contact)
-## Description
-s
-## Installation
-s
-## Usage
-s
-## License
-MIT 
+ ReadMe Generator  👋</h1>
 
-      Copyright © MIT. All rights reserved. 
-      
-      Licensed under the MIT license.
-## Contribution
-s
+## Description
+
+🔍 an app that easily generates a readme file.
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credits](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+## Installation
+
+💾 npm install
+
+## Usage
+
+💻 use for ease
+
+## License
+
+        Copyright © MIT. All rights reserved. 
+        
+        Licensed under the MIT license.
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+<br />
+This application is covered by the  license. 
+
+## Credits
+
+👪 n/a
+
 ## Tests
-s
-## Contact
-- <a href='https://github.com/s' target='_blank'>GitHub: s</a>
-- Email: s
-  
+
+✏️ npm test
+
+## Contact Me
+
+✋ Find me on GitHub: [(https://github.com/swyner97)
+
+✉️ Email me with any questions: swyner97@gmail.com
