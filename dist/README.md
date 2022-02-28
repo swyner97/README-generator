@@ -12,7 +12,7 @@
 
 ## Description
 
-🔍 An Application that creates a readme file with ease of prompts. 
+🔍 An application that generates a readme file with the ease of simple prompts. 
 
 ## Installation
 
@@ -33,7 +33,7 @@ This application is covered by the  license.
 
 ## Credits
 
-👪 none. 
+👪 Made with <3 Sarah. 
 
 ## Tests
 

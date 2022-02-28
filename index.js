@@ -77,7 +77,7 @@ const questions = [
 {
     type: 'input',
     name: 'contribution',
-    message: 'Contribution guidelines:'
+    message: 'Contribution:'
 },
 {
     type: 'input',
