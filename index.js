@@ -2,12 +2,12 @@
 const inquirer = require('inquirer');
 // const fs = require('fs');
 const fs = require("fs");
-const generateMarkdown = require('./utils/generateMarkdown');
 const path = require('path');
 
 
 // TODO: Create an array of questions for user input
-const questions = [
+inquirer.prompt(
+    [
         {
             type: 'input',
             name: 'username',
@@ -16,8 +16,19 @@ const questions = [
                 if (usernameInput) {
                     return true;
                 } else {
-                    console.log('You need to enter your username!');
-                    return false;
+                  {return 'Please enter your Github username'}
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Email:',
+            validation: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else{
+                    {return 'Please enter your email to continue'}
                 }
             }
         },
@@ -27,10 +38,9 @@ const questions = [
             message: 'Project title?',
             validate: projectTitle => {
                 if (projectTitle) {
-                    return true; 
+                    return true;
                 } else {
-                    console.log('Please input your project title!');
-                    return false;
+                    {return 'Please enter your project title to continue'}
                 }
             }
 
@@ -43,8 +53,7 @@ const questions = [
                 if (projectDescription) {
                     return true;
                 } else {
-                    console.log('Come on now, you need a project description, silly!');
-                    return false;
+                    {return 'Please enter the project description to continue'}
                 }
             }
         },
@@ -82,20 +91,61 @@ const questions = [
             message: 'License',
             choices: ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "Mozilla Public License 2.0", "IBM", "GPL", "None"]
         }
+    
 
     ]
+).then(({
+    title,
+    description,
+    usage,
+    installation, 
+    license, 
+    tests,
+    contribution, 
+    username,
+    email 
+}) =>{
+    const template = `# ${title}
+    * [Description](#description)
+    * [Usage](#usage)
+    * [Installation](#installation)
+    * [License](#license)
+    * [Tests](#tests)
+    * [Contribution](#contribution)
+    * [Contact](#contact)
+    
+    ## Description
+    ${description}
+    
+    ## Usage
+    ${usage}
+  
+    ## Installation
+    ${installation}
+    
+    ## Contribution
+    ${contribution}
+    
+    ## Tests
+    ${tests}
 
-    function generateReadme(fileName, data) {
-        return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-    }
+     ## License
+    ${license} 
 
-    function init() {
-        inquirer.prompt(questions).then(data => {
-            console.log ("README file created")
-            generateReadme("./dist/README.md", generateMarkdown(data))    
-        })   
-       
-       }
-       
-       init();
+    ## Contact
+    ${username}
+    ${email}
+    `
+
+    // Function to create readme using fs 
+    createNewFile(title,template);
+}
+);
+
+// create createNewFile function 
+function createNewFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
+
+
 
