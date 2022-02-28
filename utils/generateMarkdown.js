@@ -32,9 +32,6 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
     return ` ${data.title} 👋</h1>
 
-## Description
-
-🔍 ${data.description}
 ## Table of Contents
 
 - [Description](#description)
@@ -44,6 +41,10 @@ function generateMarkdown(data) {
 - [Credits](#contributing)
 - [Tests](#tests)
 - [Contact Me](#Contact)
+
+## Description
+
+🔍 ${data.description}
 
 ## Installation
 
@@ -69,7 +70,7 @@ This application is covered by the ${renderLicenseBadge(data.license)} license.
 
 ## Contact Me
 
-✋ Find me on GitHub: (https://github.com/${data.username})
+✋ Find me on GitHub: https://github.com/${data.username}
 
 ✉️ Email me with any questions: ${data.email}`;
 
