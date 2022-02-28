@@ -38,6 +38,7 @@
     "onetime": "^5.1.2",
     "ora": "^5.4.1",
     "os-tmpdir": "^1.0.2",
+    "path": "^0.12.7",
     "readable-stream": "^3.6.0",
     "restore-cursor": "^3.1.0",
     "run-async": "^2.4.1",

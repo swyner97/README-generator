@@ -26,5 +26,7 @@
         
 //         Licensed under the ${license} license.`)
 //     }
+
+//     module.exports = generateMarkdown;
   
   
