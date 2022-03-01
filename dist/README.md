@@ -8,11 +8,11 @@
 - [License](#license)
 - [Credits](#contributing)
 - [Tests](#tests)
-- [Contact Me](#Contact)
+- [Questions](#Questions)
 
 ## Description
 
-🔍 An application that creates a readme file with the ease of prompts!
+🔍 An application that creates a readme file with the ease of prompts
 
 ## Installation
 
@@ -33,13 +33,13 @@ This application is covered by the  license.
 
 ## Credits
 
-👪 Made with <3, Sarah. 
+👪 Made with <3, Sarah.
 
 ## Tests
 
 ✏️ npm test
 
-## Contact Me
+## Questions
 
 ✋ Find me on GitHub: https://github.com/swyner97
 

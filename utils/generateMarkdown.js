@@ -40,7 +40,7 @@ function generateMarkdown(data) {
 - [License](#license)
 - [Credits](#contributing)
 - [Tests](#tests)
-- [Contact Me](#Contact)
+- [Questions](#Questions)
 
 ## Description
 
@@ -68,7 +68,7 @@ This application is covered by the ${renderLicenseBadge(data.license)} license.
 
 ✏️ ${data.tests}
 
-## Contact Me
+## Questions
 
 ✋ Find me on GitHub: https://github.com/${data.username}
 
