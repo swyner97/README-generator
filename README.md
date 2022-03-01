@@ -29,8 +29,10 @@ Run the following command at th root of your project and answer the prompted que
   
 `node index.js`
 
-## Contributing
+## Contribution
 [Sarah Wyner ❤️](https://github.com/swyner97)
 
 ## Questions
-✉️ Contact me with any questions: [Email Me](mailto:swyner97@gmail.com) , [GitHub](https://github.com/swyner97)
+✉️ Contact me with any questions: 
+   * [Email Me](mailto:swyner97@gmail.com) 
+   * [GitHub](https://github.com/swyner97)
