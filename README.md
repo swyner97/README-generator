@@ -1,6 +1,4 @@
-## Title 
-
-README.md Generator Using Node.js
+## README.md Generator Using Node.js
 
 ## Description 
 
