@@ -6,13 +6,13 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Credits](#contributing)
+- [Credits](#credits)
 - [Tests](#tests)
 - [Questions](#Questions)
 
 ## Description
 
-🔍 An application that creates a readme file with the ease of prompts
+🔍 An application that creates a readme file with the ease of prompts!
 
 ## Installation
 
@@ -20,7 +20,7 @@
 
 ## Usage
 
-💻 Use of ease. 
+💻 Use of ease.
 
 ## License
 
